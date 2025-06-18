@@ -24,4 +24,4 @@ def _handle_requests(method, url, data=None):
 
 while True:
     post_game_comment("xXType_your_username_hereXx", "MySuperCoolPass123", "www", "2263148", rand_com)post_game_comment("xXType_your_username_hereXx", "MySuperCoolPass123", "www", "2263148", rand_com)
-    time.sleep(100)
+    time.sleep(300)
