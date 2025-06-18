@@ -10,3 +10,7 @@ After that for the fourth paramater, it will automatically put in a random comme
 # Bot sample
 
 I created a bot to spread positivity across KoGaMa so here's the bot: https://www.kogama.com/profile/670375609/. Feel free to friend the bot if you want some positivity in your life!
+
+# Disclaimer
+
+I am not responsible if you use the bot to send comments that violate KoGaMa ToS and get banned. Please use it wisely.
