@@ -5,16 +5,16 @@ import json
 
 with open('game_messages.json', 'r') as file:
     data = json.load(file)
-rand_com = data[random.randint(0, 17)]
 session = requests.session()
-def post_game_comment(username : str, password : str, server : str, game_id : str, message : str):
+def post_game_comment(username : str, password : str, server : str, game_id : str):
     url = {
         'br': 'https://kogama.com.br',
         'www': 'https://www.kogama.com',
         'friends': 'https://friends.kogama.com',
     }[server.lower()]
     session.post(f"{url}/auth/login/", json={"username": username,"password": password})
-    _handle_requests(method='POST', url=f"{url}/game/{game_id}/comment/", data={"comment": message})
+    rand_com = data[random.randint(0, 16)]
+    _handle_requests(method='POST', url=f"{url}/game/{game_id}/comment/", data={"comment": rand_com})
 
 def _handle_requests(method, url, data=None):
     if method == 'GET':
@@ -23,5 +23,5 @@ def _handle_requests(method, url, data=None):
         session.post(url, json=data)
 
 while True:
-    post_game_comment("xXType_your_username_hereXx", "MySuperCoolPass123", "www", "2263148", rand_com)post_game_comment("xXType_your_username_hereXx", "MySuperCoolPass123", "www", "2263148", rand_com)
+    post_game_comment("xXType_your_username_hereXx", "MySuperCoolPass123", "www", "2263148")
     time.sleep(300)
